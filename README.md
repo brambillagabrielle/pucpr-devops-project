@@ -1,5 +1,7 @@
 # Projeto DevOps: Pipeline de CI/CD com Jenkins e Docker
 
+<img src="https://img.shields.io/badge/Jenkins-49728B?style=for-the-badge&logo=jenkins&logoColor=white"> <img src="https://img.shields.io/badge/Docker-2CA5E0?style=for-the-badge&logo=docker&logoColor=white">
+
 ## Introdução
 Este projeto foi desenvolvimento como proposta de trabalho da disciplina de Cisco DevNet Associate da Pós-graduação de Engenharia de Serviços e Sistemas de Cloud Computing (PUCPR), focada em DevOps.
 
@@ -21,9 +23,6 @@ Teve como objetivo praticar alguns conceitos e práticas estudados teoriamente n
     ├── main.py
     └── requirements.txt
 ```
-
-<img a="https://img.shields.io/badge/Jenkins-49728B?style=for-the-badge&logo=jenkins&logoColor=white">
-<img a="https://img.shields.io/badge/Docker-2CA5E0?style=for-the-badge&logo=docker&logoColor=white">
 
 ## Preparação
 
