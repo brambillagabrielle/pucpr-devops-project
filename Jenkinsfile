@@ -15,16 +15,21 @@ pipeline {
         }
         stage('Build') {
             steps {
-                echo "Realizando o build das imagens do Docker..."
-                sh 'docker build -t brambillagabi/imagem-db:latest ./db'
-                sh 'docker build -t brambillagabi/imagem-web:latest ./web'
+                echo "Realizando o Build das imagens do Docker..."
+                sh "docker build -t brambillagabi/imagem-db:${BUILD_NUMBER} ./db"
+                sh "docker build -t brambillagabi/imagem-web:${BUILD_NUMBER} ./web"
             }
         }
         stage('Delivery') {
             steps {
                 echo "Realizando o Delivery das imagens do Docker..."
-                sh 'docker push brambillagabi/imagem-db:latest'
-                sh 'docker push brambillagabi/imagem-web:latest'
+                withCredentials([usernamePassword(credentialsId: 'docker-token',
+                                   usernameVariable: 'DOCKER_USER',
+                                   passwordVariable: 'DOCKER_PASS')]) {
+                  sh '''echo "$DOCKER_PASS" | docker login -u "$DOCKER_USER" --password-stdin'''
+                  sh "docker push brambillagabi/imagem-db:${BUILD_NUMBER}"
+                  sh "docker push brambillagabi/imagem-web:${BUILD_NUMBER}"
+                }
             }
         }
     }
