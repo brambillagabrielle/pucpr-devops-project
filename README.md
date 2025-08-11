@@ -3,9 +3,9 @@
 <img src="https://img.shields.io/badge/Jenkins-49728B?style=for-the-badge&logo=jenkins&logoColor=white"> <img src="https://img.shields.io/badge/Docker-2CA5E0?style=for-the-badge&logo=docker&logoColor=white">
 
 ## Introdução
-Este projeto foi desenvolvimento como proposta de trabalho da disciplina de Cisco DevNet Associate da Pós-graduação de Engenharia de Serviços e Sistemas de Cloud Computing (PUCPR), focada em DevOps.
+Este projeto foi desenvolvimento como proposta de trabalho avaliativo da disciplina **Cisco DevNet Associate - DevOps**, realizada na Pós-graduação de Engenharia de Serviços e Sistemas de Cloud Computing (PUCPR).
 
-Teve como objetivo praticar alguns conceitos e práticas estudados teoriamente na matéria, através do desenvolvimento de uma pipeline de CI/CD utilizando Jenkins e Docker, contendo os seguintes estágios:
+Teve como objetivo praticar alguns conceitos estudados teoriamente na matéria, através do desenvolvimento de uma pipeline de CI/CD utilizando Jenkins e Docker, contendo os seguintes estágios:
 1. Cleanup
 2. Checkout
 3. Build
